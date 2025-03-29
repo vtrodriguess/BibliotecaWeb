@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{
+	background-color: #dfffcb;
+	font-family: Georgia;
+}
+
+.botao{
+	background-color: #08c6ff;
+	color: #ffffff;
+	padding: 5px 10px;
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+input{
+	border-radius: 10px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+hr {
+    height: 3px; 
+    background-color: #08c6ff; 
+    border: none; 
+    margin: 15px 0; 
+}
+
+.botao:hover{
+	background-color: #0080ff;
+}
+
+.botaoIndex{
+	background-color: #08c6ff;
+	color: #ffffff;
+	padding: 9px;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 15px;
+}
+
+.botaoIndex:hover{
+	background-color: #0080ff;
+}
+
+.cont{
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	color: #9b3f00;
+}
+
+.tabela{
+	border-collapse: collapse;
+	margin: auto;
+	background-color: #ecc85e;
+	border: 1px solid #ffffff;
+}
+
+.tabela td, 
+.tabela th{
+	padding: 10px;
+	text-align: center;
+	background-color: #ecc85e;
+    border: 1px solid #ffffff;
+	color: #ffffff;
+	
+}
+
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.remover{
+	padding: 5px;
+	background-color: #ff0000;
+	border-radius: 15px;
+	
+}
+
+.remover:hover {
+    background-color: #e60000; 
+}
+
+.alugar{
+	padding: 5px;
+	background-color: #2e6036;
+	border-radius: 15px;
+}
+
+.alugar:hover{
+	background-color: #008040;
+}
