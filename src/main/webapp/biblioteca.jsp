@@ -64,13 +64,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("livros
 			%>
 		</tbody>
 	</table>
-	<script>
-	function confirmar(id){
-		let resp = confirm("Confirma?")
-		if(resp === true){
-			window.location.href = "remover?id=" + id
-		}
-	}
-	</script>
+	
+	<script src="scripts/scripts.js"></script>
 </body>
 </html>

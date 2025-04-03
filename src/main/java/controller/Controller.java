@@ -42,9 +42,9 @@ public class Controller extends HttpServlet {
 			editarDevolver(request, response);
 		} else if (caminho.equals("/devolver_form")) {
 			devolverLivro(request, response);
-		} else if (caminho.equals("/remover")) {
-			removerLivro(request, response);
-		} else {
+		} /*else if (caminho.equals("/remover")) {
+			removerLivro(request, response);*/
+		 else {
 			response.sendRedirect("index.html");
 		}
 	}
@@ -55,6 +55,16 @@ public class Controller extends HttpServlet {
 
 		if (teste.equals("/inserir")) {
 			adicionar(request, response);
+		}
+	}
+	
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String teste = request.getServletPath();
+
+		if (teste.equals("/remover")) {
+			removerLivro(request, response);
+			
 		}
 	}
 
@@ -135,7 +145,7 @@ public class Controller extends HttpServlet {
 		String id = request.getParameter("id");
 		livros.setId(id);
 		dao.remover(livros);
-		response.sendRedirect("main");
+		response.setStatus(204);
 	}
 
 }
