@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Livros</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="imagens/liv.png">
+</head>
+<body onload="listar_fetch()">
+
+<h1>LIVROS</h1>
+	<hr>
+	<div class="cont">
+		<a href="novoLivro.html" class="botao">Cadastrar Livro</a>
+	</div>
+	<br>
+	<table class="tabela">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Título</th>
+				<th>Autor</th>
+				<th>Ano de Pub.</th>
+				<th>Disponível</th>
+				<th>Remover</th>
+				<th>Alugar / Devolver</th>
+			</tr>
+		</thead>
+		<tbody id="tabela">
+		</tbody>
+	</table>
+	
+	<script src="scripts/scripts.js"></script>
+
+</body>
+</html>
